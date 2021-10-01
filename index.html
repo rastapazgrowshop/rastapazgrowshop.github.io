@@ -78,17 +78,7 @@
 
 
 
-             const textureLoader = new THREE.TextureLoader()
-            const myTexture = textureLoader.load('/log.png')     
 
-             const planeSize = 10;
-             const planeGeo = new THREE.PlaneGeometry(planeSize, planeSize);
-              const planeMat = new THREE.MeshBasicMaterial({ map: myTexture ,
-                                                            side: THREE.DoubleSide});
-              const mesh = new THREE.Mesh(planeGeo, planeMat);
-                mesh.rotation.y = Math.PI * 2.5;
-                mesh.position.y = 3;
-                scene.add(mesh);
 
    
 
@@ -122,7 +112,7 @@
 
             for (let i = 0; i < 6; i++)
                 materialArray[i].side = THREE.BackSide;
-            let skyboxGeo = new THREE.BoxGeometry( 150,50, 150); //aLTYO LARGO ANCHO
+            let skyboxGeo = new THREE.BoxGeometry( 150,150, 150); //aLTYO LARGO ANCHO
             let skybox = new THREE.Mesh( skyboxGeo, materialArray );
             scene.add( skybox ); 
 
@@ -150,9 +140,7 @@
 <div class="buscanos">        
   <h2 class="buscanos" style="padding-bottom: 3%;">Buscanos en Instagram</h2>
   <div class="hola" ></div>
-  <h1 style="margin: -7px;">
-    idear.comunicaciondigital
-  </h1>
+
 </div>
 
 
