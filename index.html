@@ -86,7 +86,7 @@
 
             let materialArray = [];
 
-        let texture_ft = new THREE.TextureLoader().load( '/pared1 – 1.png.png');
+        let texture_ft = new THREE.TextureLoader().load( '/pared1 – 1.png');
         let texture_bk = new THREE.TextureLoader().load( '/paredback.png');
 		  
 		          let texture_up = new THREE.TextureLoader().load( '/paredup.png');
@@ -101,9 +101,9 @@
 
             materialArray.push(new THREE.MeshBasicMaterial( { map: texture_ft }));
             materialArray.push(new THREE.MeshBasicMaterial( { map:texture_bk }));
+            materialArray.push(new THREE.MeshBasicMaterial( { map:texture_up  }));
+            materialArray.push(new THREE.MeshBasicMaterial( { map:texture_dn  }));
             materialArray.push(new THREE.MeshBasicMaterial( { map:texture_lf  }));
-            materialArray.push(new THREE.MeshBasicMaterial( { map:texture_rt  }));
-            materialArray.push(new THREE.MeshBasicMaterial( { map:texture_up }));
             materialArray.push(new THREE.MeshBasicMaterial( { map:texture_dn }));
 
 
