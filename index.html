@@ -81,7 +81,7 @@
 
 
              const textureLoader = new THREE.TextureLoader()
-            const myTexture = textureLoader.load('/textures/log.png')     
+            const myTexture = textureLoader.load('/log.png')     
 
              const planeSize = 10;
              const planeGeo = new THREE.PlaneGeometry(planeSize, planeSize);
@@ -98,17 +98,21 @@
 
             let materialArray = [];
 
-        let texture_ft = new THREE.TextureLoader().load( './textures/pared1.png');
-        let texture_bk = new THREE.TextureLoader().load( './textures/pared2.png');
-        let texture_up = new THREE.TextureLoader().load( './textures/pared3.png');
-        let texture_dn = new THREE.TextureLoader().load( './textures/pared4.png');
+        let texture_ft = new THREE.TextureLoader().load( '/pared1 – 1.png.png');
+        let texture_bk = new THREE.TextureLoader().load( '/paredback.png');
+		  
+	let texture_lf = new THREE.TextureLoader().load( '/paredleft.png');
+        let texture_rt = new THREE.TextureLoader().load( '/paredright.png');
+		  
+        let texture_up = new THREE.TextureLoader().load( '/paredup.png');
+        let texture_dn = new THREE.TextureLoader().load( '/pareddown.png');
 
 
 
             materialArray.push(new THREE.MeshBasicMaterial( { map: texture_ft }));
             materialArray.push(new THREE.MeshBasicMaterial( { map:texture_bk }));
-            materialArray.push(new THREE.MeshBasicMaterial( { color: 0xD5A026  }));
-            materialArray.push(new THREE.MeshBasicMaterial( { color: 0xD5A026  }));
+            materialArray.push(new THREE.MeshBasicMaterial( { map:texture_lf  }));
+            materialArray.push(new THREE.MeshBasicMaterial( { map:texture_rt  }));
             materialArray.push(new THREE.MeshBasicMaterial( { map:texture_up }));
             materialArray.push(new THREE.MeshBasicMaterial( { map:texture_dn }));
 
