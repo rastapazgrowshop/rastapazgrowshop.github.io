@@ -1,0 +1,73 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background: #171723;
+}
+
+
+
+h1{
+    color: #101010;
+    font-size: 44px;
+
+}
+
+
+@media screen and (max-width: 601px) {
+    h1 {
+        font-size: 15px;
+        color:   #101010;
+        
+}   }
+
+
+
+
+
+h2{
+    color: #101010;
+    font-size: 55px;
+
+}
+@media screen and (max-width: 601px) {
+    h2 {
+        font-size: 18px;
+        color:  #101010;
+        ;
+}   
+}
+
+
+
+
+.saludo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 9px;
+    background-color: #D5A026;
+
+}
+
+
+
+.buscanos{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
