@@ -45,8 +45,8 @@
             camera.position.z = 20;
             controls = new OrbitControls(camera, renderer.domElement);
             controls.addEventListener('change', renderer);
-		controls.minDistance = 200;
-	    controls.maxDistance = 600;
+		controls.minDistance = 300;
+	    controls.maxDistance = 500;
             const container = document.getElementById( 'CanvasFrame' );
 
             light = new THREE.PointLight(0xc4c4c4,10);
