@@ -64,6 +64,7 @@ h2{
 
 .buscanos{
     display: flex;
+    background-color: #D5A026;
     position: absolute;
     bottom: 10px;
     width: 100%;
