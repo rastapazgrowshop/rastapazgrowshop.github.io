@@ -45,6 +45,7 @@
             camera.position.z = 20;
             controls = new OrbitControls(camera, renderer.domElement);
             controls.addEventListener('change', renderer);
+		controls.minDistance = 200;
 	    controls.maxDistance = 600;
             const container = document.getElementById( 'CanvasFrame' );
 
